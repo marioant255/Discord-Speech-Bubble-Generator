@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Speech Bubble Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Discord Speech Bubble Generator</h1>
+        <input type="file" id="imageUpload" accept="image/*">
+        <div id="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div class="controls">
+            <label>Resize Bubble:</label>
+            <input type="range" id="resizeBubble" min="50" max="400" value="200">
+        </div>
+        <button id="downloadBtn">Download Image</button>
+        <footer>Credits to <strong>marioant25</strong></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
