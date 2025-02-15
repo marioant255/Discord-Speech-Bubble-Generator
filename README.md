@@ -3,8 +3,6 @@
 Welcome to the **Discord Speech Bubble Generator**! This tool allows you to add a customizable speech bubble to your images. You can input your desired text, adjust the size of the speech bubble, and then download the image with the speech bubble applied.
 
 ## <h2 style="font-size: 28px;">Features</h2>
-
-- <h3 style="font-size: 24px;">Add Text to Speech Bubble:</h3> Type your own text to display inside the speech bubble.
 - <h3 style="font-size: 24px;">Resize Speech Bubble:</h3> Adjust the size of the speech bubble to fit your image.
 - <h3 style="font-size: 24px;">Downloadable Image:</h3> Once you're happy with your design, download the image with the speech bubble.
 
