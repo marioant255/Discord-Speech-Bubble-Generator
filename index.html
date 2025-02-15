@@ -58,7 +58,7 @@
         .slider-control {
             margin-bottom: 15px;
         }
-        #downloadBtn {
+        #downloadBtn, #githubBtn {
             background: #43B581;
             border: none;
             padding: 10px 20px;
@@ -66,6 +66,10 @@
             color: white;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 10px;
+        }
+        #githubBtn {
+            background: #24292F; /* GitHub dark theme */
         }
         footer {
             margin-top: 20px;
@@ -83,7 +87,7 @@
         
         <div class="upload-section">
             <label for="imageUpload" class="custom-file-upload">Upload Image</label>
-            <input type="file" id="imageUpload" accept="image/*" hidden>
+            <input type="file" id="imageUpload" accept="image/*, .gif" hidden>
         </div>
         
         <div id="canvas-container">
@@ -98,6 +102,7 @@
         </div>
         
         <button id="downloadBtn">Download Image</button>
+        <button id="githubBtn" onclick="window.location.href='https://github.com/marioant255/Discord-Speech-Bubble-Generator'">Visit GitHub</button>
         
         <footer>Credits to <strong>marioant25</strong></footer>
     </div>
