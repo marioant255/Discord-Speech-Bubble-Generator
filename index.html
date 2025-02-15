@@ -6,19 +6,99 @@
     <title>Discord Speech Bubble Generator</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2C2F33;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .upload-section {
+            margin-bottom: 20px;
+        }
+        .custom-file-upload {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #7289DA;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+        }
+        #canvas-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            padding: 0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        canvas {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .controls {
+            background: #40444B;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .slider-control {
+            margin-bottom: 15px;
+        }
+        #downloadBtn {
+            background: #43B581;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Discord Speech Bubble Generator</h1>
-        <input type="file" id="imageUpload" accept="image/*">
+        <header>
+            <h1>Discord Speech Bubble Generator</h1>
+            <p>Create a professional Discord-style speech bubble over any image.</p>
+        </header>
+        
+        <div class="upload-section">
+            <label for="imageUpload" class="custom-file-upload">Upload Image</label>
+            <input type="file" id="imageUpload" accept="image/*" hidden>
+        </div>
+        
         <div id="canvas-container">
             <canvas id="canvas"></canvas>
         </div>
+        
         <div class="controls">
-            <label>Resize Bubble:</label>
-            <input type="range" id="resizeBubble" min="50" max="400" value="200">
+            <div class="slider-control">
+                <label>Resize Bubble:</label>
+                <input type="range" id="resizeBubble" min="50" max="400" value="200">
+            </div>
         </div>
+        
         <button id="downloadBtn">Download Image</button>
+        
         <footer>Credits to <strong>marioant25</strong></footer>
     </div>
     <script src="script.js"></script>
