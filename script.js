@@ -33,6 +33,8 @@ function drawCanvas() {
     if (!uploadedImage) return;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(uploadedImage, 0, 0, canvas.width, canvas.height);
+
+    // Draw the speech bubble over the image
     ctx.drawImage(speechBubble, bubbleX, bubbleY, bubbleSize, bubbleSize / 2);
 }
 
